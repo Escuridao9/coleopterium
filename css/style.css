@@ -25,13 +25,24 @@ body {
 
 header {
   padding: 20px 32px;
-  border-bottom: 1px solid #cdd6c4;
+  border-bottom: 1px solid #526257;
 }
 
-h1 {
+header h1 {
   margin: 0;
   font-size: 28px;
-  color: #2d4b38;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #203d2b;
+}
+
+.brand-subtitle {
+  margin: 8px 0 0;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #526257;
 }
 
 main {
