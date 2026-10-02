@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #f3f5ee;
+  color: #1d2a22;
+}
+
+header {
+  padding: 20px 32px;
+  border-bottom: 1px solid #cdd6c4;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #2d4b38;
+}
+
+main {
+  padding: 32px;
+}
