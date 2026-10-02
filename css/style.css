@@ -1,6 +1,22 @@
+@font-face {
+  font-family: "Avant Garde";
+  src: url("../fonts/avant-garde-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Basic Commercial";
+  src: url("../fonts/basic-commercial-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: "Basic Commercial", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
   background-color: #f3f5ee;
@@ -20,4 +36,15 @@ h1 {
 
 main {
   padding: 32px;
+}
+
+h1,
+h2 {
+  font-family: "Avant Garde", Arial, sans-serif;
+  font-weight: 700;
+}
+
+input,
+button {
+  font: inherit;
 }
