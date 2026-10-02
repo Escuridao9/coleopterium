@@ -19,8 +19,8 @@ body {
   font-family: "Basic Commercial", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  background-color: #f3f5ee;
-  color: #1d2a22;
+  background-color: #f5f3ed;
+  color: #202821;
 }
 
 header {
@@ -35,7 +35,7 @@ h1 {
 }
 
 main {
-  padding: 32px;
+  padding: 0;
 }
 
 h1,
@@ -47,4 +47,46 @@ h2 {
 input,
 button {
   font: inherit;
+}
+
+.hero {
+  min-height: 440px;
+  padding: 64px 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.hero h2 {
+  max-width: 800px;
+  margin: 0 0 16px;
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 0 0 32px;
+}
+
+.hero label {
+  margin-bottom: 8px;
+}
+
+.hero input {
+  width: 100%;
+  max-width: 640px;
+  box-sizing: border-box;
+  padding: 16px 20px;
+
+  border: 1px solid #526257;
+  border-radius: 0;
+  background-color: #faf9f5;
+  color: #202821;
 }
