@@ -1,0 +1,23 @@
+[
+  {
+    "id": "stag-beetle",
+    "commonName": "Stag beetle",
+    "scientificName": "Lucanus cervus",
+    "image": "images/stag-beetle.jpg",
+    "imageAlt": "Male stag beetle viewed from above"
+  },
+  {
+    "id": "titan-beetle",
+    "commonName": "Titan beetle",
+    "scientificName": "Titanus giganteus",
+    "image": "images/titan-beetle.jpg",
+    "imageAlt": "Male titan beetle viewed from above"
+  },
+  {
+    "id": "seven-spot-ladybird",
+    "commonName": "Seven-spot ladybird",
+    "scientificName": "Coccinella septempunctata",
+    "image": "images/seven-spot-ladybird.png",
+    "imageAlt": "Seven-spot ladybird viewed from above"
+  }
+]
