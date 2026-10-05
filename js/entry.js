@@ -1,5 +1,9 @@
 import { getBeetles } from "./beetles.js";
 
+const params = new URLSearchParams(window.location.search);
+const beetleId = params.get("id") || "stag-beetle";
+
+const entryContent = document.getElementById("entry-content");
 const entryName = document.getElementById("entry-name");
 const entryScientificName = document.getElementById("entry-scientific-name");
 const entryImage = document.getElementById("entry-image");
@@ -10,23 +14,30 @@ const entryPhotoLicense = document.getElementById("entry-photo-license");
 async function loadEntry() {
   try {
     const beetles = await getBeetles();
-    const beetle = beetles.find((beetle) => beetle.id === "stag-beetle");
+    const beetle = beetles.find(beetle => beetle.id === beetleId);
 
     if (!beetle) {
-      throw new Error("Stag beetle entry was not found.");
+      entryMessage.textContent =
+        "Beetle not found. Return to the encyclopedia to choose a species.";
+
+      document.title = "Beetle not found | Coleopterium";
+      return;
     }
 
     entryName.textContent = beetle.commonName;
     entryScientificName.textContent = beetle.scientificName;
     entryImage.src = beetle.image;
     entryImage.alt = beetle.imageAlt;
+
     entryPhotoSource.textContent = beetle.imageCredit.author;
     entryPhotoSource.href = beetle.imageCredit.source;
-
     entryPhotoLicense.textContent = beetle.imageCredit.license;
     entryPhotoLicense.href = beetle.imageCredit.licenseUrl;
 
     document.title = `${beetle.commonName} | Coleopterium`;
+
+    entryContent.hidden = false;
+    entryMessage.textContent = "";
   } catch (error) {
     entryMessage.textContent =
       "The species information could not be loaded. Please reload the page.";
