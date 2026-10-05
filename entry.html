@@ -17,44 +17,54 @@
       <a href="index.html">Back to the encyclopedia</a>
 
       <p id="entry-message" role="status">Loading species information...</p>
-      <section id="entry-content" hidden>
-        <h2 id="entry-name">Stag beetle</h2>
+      <div id="entry-content" class="entry-layout" hidden>
+        <nav class="entry-nav" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#entry-name">Species</a>
+          <a href="#overview-title">Overview</a>
+        </nav>
 
-        <p>
-          <i id="entry-scientific-name" lang="la">Lucanus cervus</i>
-        </p>
+        <article class="entry-details">
+          <h2 id="entry-name">Stag beetle</h2>
 
-        <dl class="entry-facts">
-          <div>
-            <dt>Adult length</dt>
-            <dd id="entry-length"></dd>
-          </div>
+          <p>
+            <i id="entry-scientific-name" lang="la">Lucanus cervus</i>
+          </p>
 
-          <div>
-            <dt>Habitat</dt>
-            <dd id="entry-habitat"></dd>
-          </div>
-        </dl>
-        
-        <img
-          id="entry-image"
-          src="images/stag-beetle.jpg"
-          alt="Male stag beetle viewed from above"
-        />
+          <dl class="entry-facts">
+            <div>
+              <dt>Adult length</dt>
+              <dd id="entry-length"></dd>
+            </div>
 
-        <p class="image-credits">
-          Photo: <a id="entry-photo-source"></a> (<a
-            id="entry-photo-license"
-          ></a
-          >).
-        </p>
-        <section class="entry-section" aria-labelledby="overview-title">
-          <h3 id="overview-title">Overview</h3>
-          <p id="entry-overview"></p>
+            <div>
+              <dt>Habitat</dt>
+              <dd id="entry-habitat"></dd>
+            </div>
+          </dl>
 
-          <p class="entry-source">Source: <a id="entry-overview-source"></a></p>
-        </section>
-      </section>
+          <img
+            id="entry-image"
+            src="images/stag-beetle.jpg"
+            alt="Male stag beetle viewed from above"
+          />
+
+          <p class="image-credits">
+            Photo: <a id="entry-photo-source"></a> (<a
+              id="entry-photo-license"
+            ></a
+            >).
+          </p>
+          <section class="entry-section" aria-labelledby="overview-title">
+            <h3 id="overview-title">Overview</h3>
+            <p id="entry-overview"></p>
+
+            <p class="entry-source">
+              Source: <a id="entry-overview-source"></a>
+            </p>
+          </section>
+        </article>
+      </div>
     </main>
   </body>
 </html>
