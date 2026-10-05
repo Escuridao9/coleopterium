@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collectible cards | Coleopterium</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gacha.css">
+  <script type="module" src="js/gacha.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Coleopterium</h1>
+    <p class="brand-subtitle">The beetle archive</p>
+  </header>
+
+  <main class="gacha-page">
+    <nav class="gacha-links" aria-label="Archive links">
+      <a href="index.html">Back to the encyclopedia</a>
+      <a href="quiz.html">Earn points in the quiz</a>
+    </nav>
+
+    <h2>Collectible cards</h2>
+    <p>Spend <strong id="gacha-cost">20</strong> points to draw a random card.
+      Every card in the pool has an equal chance.</p>
+    <p id="gacha-message" role="status">Loading the cards…</p>
+
+    <div id="gacha-content" hidden>
+      <div class="gacha-overview">
+        <section aria-labelledby="gacha-draw-title">
+          <h3 id="gacha-draw-title">Draw a card</h3>
+          <dl class="gacha-stats">
+            <div>
+              <dt>Your points</dt>
+              <dd id="gacha-balance">—</dd>
+            </div>
+            <div>
+              <dt>Different cards</dt>
+              <dd id="gacha-distinct">—</dd>
+            </div>
+            <div>
+              <dt>Total copies</dt>
+              <dd id="gacha-total">—</dd>
+            </div>
+          </dl>
+
+          <button id="gacha-draw" class="gacha-button" type="button" disabled>
+            Draw a card — 20 points
+          </button>
+          <p id="gacha-help"></p>
+          <button id="gacha-refresh" class="gacha-button" type="button" hidden>
+            Retry loading saved progress
+          </button>
+        </section>
+
+        <section id="gacha-result" class="draw-result"
+          aria-labelledby="gacha-result-title" hidden>
+          <h3 id="gacha-result-title" tabindex="-1">Your latest draw</h3>
+          <div id="gacha-drawn-card"></div>
+        </section>
+      </div>
+
+      <section class="owned-collection" aria-labelledby="gacha-collection-title">
+        <h3 id="gacha-collection-title">My collection</h3>
+        <p id="gacha-collection-message"></p>
+        <div id="gacha-collection-grid" class="collection-grid"></div>
+      </section>
+    </div>
+
+    <template id="collectible-card-template">
+      <article class="collectible-card">
+        <p class="card-copy-count"></p>
+        <div class="card-art">
+          <img class="card-image" alt="" loading="lazy">
+          <p class="card-art-placeholder" hidden>Image unavailable</p>
+        </div>
+        <h4 class="card-name"></h4>
+        <p><i class="card-scientific-name" lang="la"></i></p>
+        <p><a class="card-entry-link">Read the species entry</a></p>
+        <p class="card-photo-credit" hidden>
+          Photo: <a class="card-photo-source"></a>
+          (<a class="card-photo-license"></a>).
+        </p>
+      </article>
+    </template>
+  </main>
+</body>
+</html>

@@ -1,80 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beetle quiz | Coleopterium</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/quiz.css">
-  <script type="module" src="js/quiz.js"></script>
-</head>
-<body>
-  <header>
-    <h1>Coleopterium</h1>
-    <p class="brand-subtitle">The beetle archive</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beetle quiz | Coleopterium</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+    <script type="module" src="js/quiz.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Coleopterium</h1>
+      <p class="brand-subtitle">The beetle archive</p>
+    </header>
 
-  <main class="quiz-page">
-    <a href="index.html">Back to the encyclopedia</a>
-    <h2>Test your beetle knowledge</h2>
-    <p>Match each scientific name to its common name. Earn 10 points for each
-      correct answer to spend on card draws.</p>
-    <p id="quiz-message" role="status">Loading the quiz…</p>
+    <main class="quiz-page">
+      <a href="index.html">Back to the encyclopedia</a>
+      <h2>Test your beetle knowledge</h2>
+      <p>
+        Match each scientific name to its common name. Earn 10 points for each
+        correct answer to spend on card draws.
+      </p>
+      <p id="quiz-message" role="status">Loading the quiz…</p>
 
-    <div id="quiz-content" class="quiz-panel" hidden>
-      <dl class="quiz-stats">
-        <div>
-          <dt>Your points</dt>
-          <dd id="quiz-balance">—</dd>
-        </div>
-        <div>
-          <dt>Correct answers</dt>
-          <dd id="quiz-score">0</dd>
-        </div>
-        <div>
-          <dt>Earned this round</dt>
-          <dd id="quiz-earned">0</dd>
-        </div>
-      </dl>
+      <div id="quiz-content" class="quiz-panel" hidden>
+        <dl class="quiz-stats">
+          <div>
+            <dt>Your points</dt>
+            <dd id="quiz-balance">—</dd>
+          </div>
+          <div>
+            <dt>Correct answers</dt>
+            <dd id="quiz-score">0</dd>
+          </div>
+          <div>
+            <dt>Earned this round</dt>
+            <dd id="quiz-earned">0</dd>
+          </div>
+        </dl>
 
-      <section id="quiz-question-section" aria-labelledby="quiz-question">
-        <p id="quiz-progress" class="quiz-progress"></p>
-        <h3 id="quiz-question" tabindex="-1"
-          aria-describedby="quiz-scientific-name">
-          Which beetle has this scientific name?
-        </h3>
-        <p class="quiz-name"><i id="quiz-scientific-name" lang="la"></i></p>
+        <section id="quiz-question-section" aria-labelledby="quiz-question">
+          <p id="quiz-progress" class="quiz-progress"></p>
+          <h3
+            id="quiz-question"
+            tabindex="-1"
+            aria-describedby="quiz-scientific-name"
+          >
+            Which beetle has this scientific name?
+          </h3>
+          <p class="quiz-name"><i id="quiz-scientific-name" lang="la"></i></p>
 
-        <div id="quiz-options" class="quiz-options" role="group"
-          aria-labelledby="quiz-question quiz-scientific-name"></div>
+          <div
+            id="quiz-options"
+            class="quiz-options"
+            role="group"
+            aria-labelledby="quiz-question quiz-scientific-name"
+          ></div>
 
-        <p id="quiz-feedback" class="quiz-feedback" role="status"></p>
-        <p><a id="quiz-entry-link" hidden></a></p>
+          <p id="quiz-feedback" class="quiz-feedback" role="status"></p>
+          <p><a id="quiz-entry-link" hidden></a></p>
 
-        <div class="quiz-actions">
-          <button id="quiz-retry" class="quiz-button" type="button" hidden>
-            Retry saving points
+          <div class="quiz-actions">
+            <button id="quiz-retry" class="quiz-button" type="button" hidden>
+              Retry saving points
+            </button>
+            <button id="quiz-next" class="quiz-button" type="button" hidden>
+              Next question
+            </button>
+          </div>
+        </section>
+
+        <section id="quiz-finished" aria-labelledby="quiz-finish-title" hidden>
+          <h3
+            id="quiz-finish-title"
+            tabindex="-1"
+            aria-describedby="quiz-result"
+          >
+            Round complete
+          </h3>
+          <p id="quiz-result"></p>
+          <p>
+            <a href="gacha.html">Use your points to draw a card</a>
+          </p>
+          <button id="quiz-restart" class="quiz-button" type="button">
+            Play again
           </button>
-          <button id="quiz-next" class="quiz-button" type="button" hidden>
-            Next question
-          </button>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section id="quiz-finished" aria-labelledby="quiz-finish-title" hidden>
-        <h3 id="quiz-finish-title" tabindex="-1" aria-describedby="quiz-result">
-          Round complete
-        </h3>
-        <p id="quiz-result"></p>
-        <button id="quiz-restart" class="quiz-button" type="button">
-          Play again
-        </button>
-      </section>
-    </div>
-
-    <template id="quiz-option-template">
-      <button class="quiz-option" type="button"></button>
-    </template>
-  </main>
-</body>
+      <template id="quiz-option-template">
+        <button class="quiz-option" type="button"></button>
+      </template>
+    </main>
+  </body>
 </html>

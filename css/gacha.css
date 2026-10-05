@@ -1,0 +1,170 @@
+.gacha-page {
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.gacha-page a {
+  color: #203d2b;
+}
+
+.gacha-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.gacha-page h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  color: #203d2b;
+}
+
+.gacha-page h3,
+.card-name {
+  font-family: "Avant Garde", Arial, sans-serif;
+  line-height: 1.3;
+}
+
+.gacha-page h3 {
+  font-size: 24px;
+}
+
+.gacha-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 32px;
+  align-items: start;
+}
+
+.gacha-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+  padding: 16px 0;
+  border-top: 1px solid #526257;
+  border-bottom: 1px solid #526257;
+}
+
+.gacha-stats dt,
+.card-copy-count {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #526257;
+}
+
+.gacha-stats dd {
+  margin: 4px 0 0;
+  font-size: 24px;
+}
+
+.gacha-button {
+  padding: 12px 18px;
+  border: 1px solid #526257;
+  border-radius: 0;
+  background-color: #203d2b;
+  color: #faf9f5;
+  cursor: pointer;
+}
+
+.gacha-button:hover:not(:disabled) {
+  background-color: #31563d;
+}
+
+.gacha-button:focus-visible {
+  outline: 2px solid #203d2b;
+  outline-offset: 4px;
+}
+
+.gacha-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.owned-collection {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #526257;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.collectible-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 320px;
+  padding: 20px;
+  border: 1px solid #526257;
+  background-color: #faf9f5;
+}
+
+.card-copy-count {
+  margin: 0 0 12px;
+}
+
+.card-art {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  margin-bottom: 20px;
+  background-color: #f5f3ed;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+
+.card-image.is-photo {
+  mix-blend-mode: multiply;
+}
+
+.card-art-placeholder {
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #526257;
+}
+
+.card-name {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.collectible-card > p {
+  margin: 8px 0;
+}
+
+.collectible-card .card-photo-credit {
+  font-size: 12px;
+  color: #526257;
+}
+
+.card-photo-credit a {
+  color: inherit;
+}
+
+.gacha-page [hidden] {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .gacha-overview {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .gacha-page {
+    padding: 24px;
+  }
+}
