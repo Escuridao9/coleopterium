@@ -4,20 +4,38 @@
     "commonName": "Stag beetle",
     "scientificName": "Lucanus cervus",
     "image": "images/stag-beetle.jpg",
-    "imageAlt": "Male stag beetle viewed from above"
+    "imageAlt": "Male stag beetle viewed from above",
+    "imageCredit": {
+      "author": "Didier Descouens",
+      "source": "https://commons.wikimedia.org/wiki/File:Cerf-volant_MHNT_Dos.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
   },
   {
     "id": "titan-beetle",
     "commonName": "Titan beetle",
     "scientificName": "Titanus giganteus",
     "image": "images/titan-beetle.jpg",
-    "imageAlt": "Male titan beetle viewed from above"
+    "imageAlt": "Male titan beetle viewed from above",
+    "imageCredit": {
+      "author": "Didier Descouens",
+      "source": "https://commons.wikimedia.org/wiki/File:Titanus_giganteus_MHNT_dos_(cropped).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
   },
   {
     "id": "seven-spot-ladybird",
     "commonName": "Seven-spot ladybird",
     "scientificName": "Coccinella septempunctata",
     "image": "images/seven-spot-ladybird.png",
-    "imageAlt": "Seven-spot ladybird viewed from above"
+    "imageAlt": "Seven-spot ladybird viewed from above",
+    "imageCredit": {
+      "author": "Udo Schmidt",
+      "source": "https://commons.wikimedia.org/wiki/File:Coccinella_septempunctata_Linn%C3%A9,_1758_(30156309794).png",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    }
   }
 ]
