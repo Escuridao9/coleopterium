@@ -228,7 +228,7 @@ button {
   color: #203d2b;
 }
 
-.entry-page img {
+#entry-image {
   display: block;
   width: 100%;
   max-width: 400px;
@@ -347,4 +347,19 @@ button {
     padding-right: 0;
     border-right: 0;
   }
+}
+
+.distribution-map {
+  margin: 24px 0 0;
+}
+
+.distribution-map img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.distribution-map figcaption {
+  font-size: 14px;
+  color: #526257;
 }

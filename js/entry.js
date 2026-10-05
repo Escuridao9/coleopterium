@@ -52,8 +52,30 @@ async function loadEntry() {
     entryDistribution.textContent = beetle.distribution.text;
     entryDistributionSource.textContent = beetle.distribution.sourceName;
     entryDistributionSource.href = beetle.distribution.sourceUrl;
+
+    const map = beetle.distribution.map;
+
+    if (map) {
+      const mapImage = document.getElementById("entry-map-image");
+      mapImage.src = map.image;
+      mapImage.alt = map.imageAlt;
+
+      document.getElementById("entry-map-caption").textContent = map.caption;
+
+      const mapSource = document.getElementById("entry-map-source");
+      mapSource.textContent = map.author;
+      mapSource.href = map.sourceUrl;
+
+      const mapLicense = document.getElementById("entry-map-license");
+      mapLicense.textContent = map.license;
+      mapLicense.href = map.licenseUrl;
+
+      document.getElementById("entry-map").hidden = false;
+    }
+
     entryContent.hidden = false;
     entryMessage.textContent = "";
+    
   } catch (error) {
     entryMessage.textContent =
       "The species information could not be loaded. Please reload the page.";

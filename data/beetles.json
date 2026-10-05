@@ -8,7 +8,16 @@
     "distribution": {
       "text": "Found across much of Europe, including southern Britain. Records also extend into parts of western Asia.",
       "sourceName": "Harvey et al. (2011)",
-      "sourceUrl": "https://ptes.org/wp-content/uploads/2014/06/bionomics-and-distribution.pdf"
+      "sourceUrl": "https://ptes.org/wp-content/uploads/2014/06/bionomics-and-distribution.pdf",
+      "map": {
+        "image": "images/stag-beetle-map.jpg",
+        "imageAlt": "Map of the stag beetle's European range, with solid red and hatched areas",
+        "caption": "European range shown in a 2011 map. Solid red: range at publication; hatched: historical range.",
+        "author": "Anaxibia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lucanus_cervus_areal.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     },
     "facts": {
       "adultLength": "Males: 35–75 mm; females: 30–50 mm",
