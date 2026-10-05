@@ -91,7 +91,10 @@ function renderBeetles(beetles) {
     image.src = beetle.image;
     image.alt = beetle.imageAlt;
 
-    card.querySelector("h3").textContent = beetle.commonName;
+    const link = card.querySelector(".beetle-link");
+
+    link.textContent = beetle.commonName;
+    link.href = `entry.html?id=${encodeURIComponent(beetle.id)}`;
     card.querySelector("i").textContent = beetle.scientificName;
 
     grid.append(card);
