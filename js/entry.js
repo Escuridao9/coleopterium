@@ -14,6 +14,10 @@ const entryOverview = document.getElementById("entry-overview");
 const entryOverviewSource = document.getElementById("entry-overview-source");
 const entryLength = document.getElementById("entry-length");
 const entryHabitat = document.getElementById("entry-habitat");
+const entryDistribution = document.getElementById("entry-distribution");
+const entryDistributionSource = document.getElementById(
+  "entry-distribution-source",
+);
 
 async function loadEntry() {
   try {
@@ -45,6 +49,9 @@ async function loadEntry() {
     entryOverview.textContent = beetle.overview.text;
     entryOverviewSource.textContent = beetle.overview.sourceName;
     entryOverviewSource.href = beetle.overview.sourceUrl;
+    entryDistribution.textContent = beetle.distribution.text;
+    entryDistributionSource.textContent = beetle.distribution.sourceName;
+    entryDistributionSource.href = beetle.distribution.sourceUrl;
     entryContent.hidden = false;
     entryMessage.textContent = "";
   } catch (error) {

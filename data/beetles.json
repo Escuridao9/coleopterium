@@ -5,6 +5,11 @@
     "scientificName": "Lucanus cervus",
     "image": "images/stag-beetle.jpg",
     "imageAlt": "Male stag beetle viewed from above",
+    "distribution": {
+      "text": "Found across much of Europe, including southern Britain. Records also extend into parts of western Asia.",
+      "sourceName": "Harvey et al. (2011)",
+      "sourceUrl": "https://ptes.org/wp-content/uploads/2014/06/bionomics-and-distribution.pdf"
+    },
     "facts": {
       "adultLength": "Males: 35–75 mm; females: 30–50 mm",
       "habitat": "Woodland edges, hedgerows, orchards, parks and gardens"
@@ -27,6 +32,11 @@
     "scientificName": "Titanus giganteus",
     "image": "images/titan-beetle.jpg",
     "imageAlt": "Male titan beetle viewed from above",
+    "distribution": {
+      "text": "Recorded in Colombia, Ecuador, Peru, Bolivia, the Guianas and northern Brazil, in tropical rainforest.",
+      "sourceName": "Dvořáček et al. (2020)",
+      "sourceUrl": "https://doi.org/10.3390/insects11020120"
+    },
     "facts": {
       "adultLength": "Body length up to 167 mm",
       "habitat": "Tropical forests in South America"
@@ -49,6 +59,11 @@
     "scientificName": "Coccinella septempunctata",
     "image": "images/seven-spot-ladybird.png",
     "imageAlt": "Seven-spot ladybird viewed from above",
+    "distribution": {
+      "text": "Native to Europe and parts of Asia and Africa. Introduced populations are established in the United States.",
+      "sourceName": "University of Maryland Extension",
+      "sourceUrl": "https://extension.umd.edu/sites/extension.umd.edu/files/2025-10/25Oct03L.pdf#page=9"
+    },
     "facts": {
       "adultLength": "6–8 mm",
       "habitat": "Gardens, grassland, woodland and other habitats with aphids"
