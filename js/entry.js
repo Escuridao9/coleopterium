@@ -12,6 +12,8 @@ const entryPhotoSource = document.getElementById("entry-photo-source");
 const entryPhotoLicense = document.getElementById("entry-photo-license");
 const entryOverview = document.getElementById("entry-overview");
 const entryOverviewSource = document.getElementById("entry-overview-source");
+const entryLength = document.getElementById("entry-length");
+const entryHabitat = document.getElementById("entry-habitat");
 
 async function loadEntry() {
   try {
@@ -28,6 +30,8 @@ async function loadEntry() {
 
     entryName.textContent = beetle.commonName;
     entryScientificName.textContent = beetle.scientificName;
+    entryLength.textContent = beetle.facts.adultLength;
+    entryHabitat.textContent = beetle.facts.habitat;
     entryImage.src = beetle.image;
     entryImage.alt = beetle.imageAlt;
 

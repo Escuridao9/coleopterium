@@ -271,3 +271,24 @@ button {
 .entry-source a {
   color: inherit;
 }
+
+.entry-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 70ch;
+  padding: 16px 0;
+  border-top: 1px solid #526257;
+  border-bottom: 1px solid #526257;
+}
+
+.entry-facts dt {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #526257;
+}
+
+.entry-facts dd {
+  margin: 4px 0 0;
+}
