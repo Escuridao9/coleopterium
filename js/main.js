@@ -57,3 +57,23 @@ searchForm.addEventListener("submit", event => {
     searchMessage.textContent = "";
   }
 });
+
+/* Fetch the data of beetles */
+
+async function loadBeetles() {
+  try {
+    const response = await fetch("data/beetles.json");
+
+    if (!response.ok) {
+      throw new Error(`Could not load beetles: ${response.status}`);
+    }
+
+    const beetles = await response.json();
+
+    console.log(beetles);
+  } catch (error) {
+    console.error("Could not load the beetle catalogue:", error);
+  }
+}
+
+loadBeetles();
