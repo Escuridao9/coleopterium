@@ -10,11 +10,13 @@ const entryImage = document.getElementById("entry-image");
 const entryMessage = document.getElementById("entry-message");
 const entryPhotoSource = document.getElementById("entry-photo-source");
 const entryPhotoLicense = document.getElementById("entry-photo-license");
+const entryOverview = document.getElementById("entry-overview");
+const entryOverviewSource = document.getElementById("entry-overview-source");
 
 async function loadEntry() {
   try {
     const beetles = await getBeetles();
-    const beetle = beetles.find(beetle => beetle.id === beetleId);
+    const beetle = beetles.find((beetle) => beetle.id === beetleId);
 
     if (!beetle) {
       entryMessage.textContent =
@@ -36,6 +38,9 @@ async function loadEntry() {
 
     document.title = `${beetle.commonName} | Coleopterium`;
 
+    entryOverview.textContent = beetle.overview.text;
+    entryOverviewSource.textContent = beetle.overview.sourceName;
+    entryOverviewSource.href = beetle.overview.sourceUrl;
     entryContent.hidden = false;
     entryMessage.textContent = "";
   } catch (error) {

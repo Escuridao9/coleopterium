@@ -5,6 +5,11 @@
     "scientificName": "Lucanus cervus",
     "image": "images/stag-beetle.jpg",
     "imageAlt": "Male stag beetle viewed from above",
+    "overview": {
+      "text": "Male stag beetles have enlarged jaws resembling antlers, which they use in contests with other males. Their larvae develop underground and feed on decaying wood.",
+      "sourceName": "People's Trust for Endangered Species",
+      "sourceUrl": "https://ptes.org/campaigns/stag-beetles-2/stag-beetle-facts/"
+    },
     "imageCredit": {
       "author": "Didier Descouens",
       "source": "https://commons.wikimedia.org/wiki/File:Cerf-volant_MHNT_Dos.jpg",
@@ -18,6 +23,11 @@
     "scientificName": "Titanus giganteus",
     "image": "images/titan-beetle.jpg",
     "imageAlt": "Male titan beetle viewed from above",
+    "overview": {
+      "text": "The titan beetle is a giant longhorn beetle inhabiting tropical forests in South America. It is notable for its enormous body, powerful jaws and defensive spines.",
+      "sourceName": "Natural History Museum",
+      "sourceUrl": "https://www.nhm.ac.uk/discover/what-is-the-biggest-beetle-in-the-world.html"
+    },
     "imageCredit": {
       "author": "Didier Descouens",
       "source": "https://commons.wikimedia.org/wiki/File:Titanus_giganteus_MHNT_dos_(cropped).jpg",
@@ -31,6 +41,11 @@
     "scientificName": "Coccinella septempunctata",
     "image": "images/seven-spot-ladybird.png",
     "imageAlt": "Seven-spot ladybird viewed from above",
+    "overview": {
+      "text": "The seven-spot ladybird is a small, aphid-eating beetle recognised by seven black spots on its red wing covers. It occurs in varied habitats, including parks and gardens.",
+      "sourceName": "The Wildlife Trusts",
+      "sourceUrl": "https://www.wildlifetrusts.org/wildlife-explorer/invertebrates/beetles/7-spot-ladybird"
+    },
     "imageCredit": {
       "author": "Udo Schmidt",
       "source": "https://commons.wikimedia.org/wiki/File:Coccinella_septempunctata_Linn%C3%A9,_1758_(30156309794).png",
