@@ -1,0 +1,159 @@
+.anatomy-diagram {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.anatomy-diagram .anatomy-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: none;
+  height: auto;
+  mix-blend-mode: normal;
+}
+
+.anatomy-lines,
+.anatomy-labels {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.anatomy-labels {
+  z-index: 1;
+}
+
+.anatomy-label {
+  position: absolute;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  width: 24%;
+  min-height: 32px;
+  padding: 6px 4px;
+  border: 0;
+  border-bottom: 1px dotted #526257;
+  background: transparent;
+  color: #203d2b;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.anatomy-label[data-side="left"] {
+  left: 0;
+  text-align: right;
+}
+
+.anatomy-label[data-side="right"] {
+  right: 0;
+  text-align: left;
+}
+
+.anatomy-label:hover,
+.anatomy-label.is-active {
+  border-bottom-style: solid;
+  background-color: #e9ece3;
+}
+
+.anatomy-label:focus-visible {
+  outline: 2px solid #203d2b;
+  outline-offset: 4px;
+}
+
+.anatomy-pointer {
+  color: #526257;
+}
+
+.anatomy-pointer polyline,
+.anatomy-pointer circle {
+  stroke: currentColor;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.anatomy-pointer polyline {
+  fill: none;
+}
+
+.anatomy-pointer circle {
+  fill: #f5f3ed;
+}
+
+.anatomy-pointer.is-active {
+  color: #203d2b;
+}
+
+.anatomy-pointer.is-active polyline {
+  stroke-width: 2;
+}
+
+.anatomy-information {
+  min-height: 160px;
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #526257;
+  background-color: #faf9f5;
+}
+
+.anatomy-information h4 {
+  margin: 0 0 8px;
+  font-family: "Avant Garde", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.anatomy-information p {
+  margin: 0 0 12px;
+}
+
+.anatomy-information p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .anatomy-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    aspect-ratio: auto;
+    padding-top: 16px;
+  }
+
+  .anatomy-diagram .anatomy-image {
+    position: static;
+    transform: none;
+    width: 55%;
+    max-height: 280px;
+    object-fit: contain;
+  }
+
+  .anatomy-lines {
+    display: none;
+  }
+
+  .anatomy-labels {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    height: auto;
+  }
+
+  .anatomy-label[data-side] {
+    position: static;
+    transform: none;
+    width: auto;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid #526257;
+    text-align: center;
+  }
+}

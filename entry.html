@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stag beetle | Coleopterium</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/anatomy.css" />
     <script type="module" src="js/entry.js"></script>
   </head>
   <body>
@@ -24,6 +25,7 @@
           <a href="#overview-title">Overview</a>
           <a href="#distribution-title">Distribution</a>
           <a href="#size-title">Size comparison</a>
+          <a href="#anatomy-title">Anatomy</a>
         </nav>
 
         <article class="entry-details">
@@ -130,6 +132,53 @@
                 </p>
               </figcaption>
             </figure>
+          </section>
+          
+          <section class="entry-section" aria-labelledby="anatomy-title">
+            <h3 id="anatomy-title">Anatomy</h3>
+            <p>Select a label to explore each body part.</p>
+
+            <div class="anatomy-diagram">
+              <img id="anatomy-image" class="anatomy-image" alt="" />
+
+              <svg
+                id="anatomy-lines"
+                class="anatomy-lines"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+                focusable="false"
+              ></svg>
+
+              <div id="anatomy-labels" class="anatomy-labels"></div>
+            </div>
+
+            <p class="entry-source">Schematic silhouette, viewed from above.</p>
+
+            <div id="anatomy-information" class="anatomy-information">
+              <h4 id="anatomy-part-name"></h4>
+              <p id="anatomy-part-text" aria-live="polite"></p>
+
+              <p class="entry-source">
+                Source: <a id="anatomy-part-source"></a>
+              </p>
+            </div>
+
+            <template id="anatomy-label-template">
+              <button
+                class="anatomy-label"
+                type="button"
+                aria-controls="anatomy-information"
+                aria-pressed="false"
+              ></button>
+
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <g class="anatomy-pointer">
+                  <polyline></polyline>
+                  <circle r="0.5"></circle>
+                </g>
+              </svg>
+            </template>
           </section>
         </article>
       </div>

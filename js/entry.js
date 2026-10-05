@@ -1,4 +1,5 @@
 import { getBeetles } from "./beetles.js";
+import { renderAnatomy } from "./anatomy.js";
 
 const params = new URLSearchParams(window.location.search);
 const beetleId = params.get("id") || "stag-beetle";
@@ -97,6 +98,8 @@ async function loadEntry() {
     const sizeSource = document.getElementById("size-source");
     sizeSource.textContent = comparison.sourceName;
     sizeSource.href = comparison.sourceUrl;
+
+    renderAnatomy(beetle);
 
     entryContent.hidden = false;
     entryMessage.textContent = "";

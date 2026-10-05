@@ -19,6 +19,14 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
       }
     },
+    "anatomy": [
+  { "part": "mandibles", "side": "left", "labelY": 22, "x": 46.4, "y": 28.5 },
+  { "part": "antennae", "side": "left", "labelY": 35, "x": 38.3, "y": 32.2 },
+  { "part": "head", "side": "right", "labelY": 37, "x": 52.4, "y": 38.3 },
+  { "part": "pronotum", "side": "right", "labelY": 50, "x": 53, "y": 47.5 },
+  { "part": "elytra", "side": "left", "labelY": 65, "x": 47.9, "y": 63.5 },
+  { "part": "legs", "side": "right", "labelY": 76, "x": 59, "y": 74.5 }
+],
     "sizeComparison": {
       "lengthMm": 75,
       "image": "images/stag-beetle-silhouette.svg",
@@ -53,6 +61,13 @@
       "sourceName": "Dvořáček et al. (2020)",
       "sourceUrl": "https://doi.org/10.3390/insects11020120"
     },
+    "anatomy": [
+  { "part": "antennae", "side": "left", "labelY": 36, "x": 38, "y": 38 },
+  { "part": "head", "side": "right", "labelY": 20, "x": 51.5, "y": 20.8 },
+  { "part": "pronotum", "side": "right", "labelY": 34, "x": 53, "y": 30.5 },
+  { "part": "elytra", "side": "left", "labelY": 65, "x": 48.2, "y": 65 },
+  { "part": "legs", "side": "right", "labelY": 77, "x": 58.4, "y": 76.3 }
+],
     "sizeComparison": {
       "lengthMm": 167,
       "image": "images/titan-beetle-silhouette.svg",
@@ -87,6 +102,13 @@
       "sourceName": "University of Maryland Extension",
       "sourceUrl": "https://extension.umd.edu/sites/extension.umd.edu/files/2025-10/25Oct03L.pdf#page=9"
     },
+    "anatomy": [
+  { "part": "antennae", "side": "left", "labelY": 26, "x": 45.2, "y": 27.8 },
+  { "part": "head", "side": "right", "labelY": 29, "x": 51.8, "y": 28.8 },
+  { "part": "pronotum", "side": "right", "labelY": 43, "x": 54.5, "y": 36 },
+  { "part": "elytra", "side": "left", "labelY": 58, "x": 45.8, "y": 57.2 },
+  { "part": "legs", "side": "right", "labelY": 69, "x": 61.4, "y": 65.9 }
+],
     "sizeComparison": {
       "lengthMm": 8,
       "image": "images/seven-spot-ladybird-silhouette.svg",
