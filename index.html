@@ -53,37 +53,15 @@
         <h2 id="encyclopedia-title">Explore the encyclopedia</h2>
         <p>Discover the diversity of beetles.</p>
 
-        <div class="beetle-grid">
-          <article class="beetle-card">
-            <h3>Stag beetle</h3>
-            <p><i lang="la">Lucanus cervus</i></p>
-            <img
-              src="images/stag-beetle.jpg"
-              alt="Male stag beetle viewed from above"
-              loading="lazy"
-            />
-          </article>
+        <div class="beetle-grid"></div>
 
+        <template id="beetle-card-template">
           <article class="beetle-card">
-            <h3>Titan beetle</h3>
-            <p><i lang="la">Titanus giganteus</i></p>
-            <img
-              src="images/titan-beetle.jpg"
-              alt="Male titan beetle viewed from above"
-              loading="lazy"
-            />
+            <img alt="" loading="lazy" />
+            <h3></h3>
+            <p><i lang="la"></i></p>
           </article>
-
-          <article class="beetle-card">
-            <h3>Seven-spot ladybird</h3>
-            <p><i lang="la">Coccinella septempunctata</i></p>
-            <img
-              src="images/seven-spot-ladybird.png"
-              alt="Seven-spot ladybird viewed from above"
-              loading="lazy"
-            />
-          </article>
-        </div>
+        </template>
         <p id="search-message" role="status"></p>
         <p class="image-credits">
           Photos:
