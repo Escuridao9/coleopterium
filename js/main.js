@@ -1,3 +1,5 @@
+import { getBeetles } from "./beetles.js";
+
 /* Video controls */
 
 const heroVideo = document.getElementById("hero-video");
@@ -63,18 +65,13 @@ searchForm.addEventListener("submit", (event) => {
 
 async function loadBeetles() {
   try {
-    const response = await fetch("data/beetles.json");
-
-    if (!response.ok) {
-      throw new Error(`Could not load beetles: ${response.status}`);
-    }
-
-    const beetles = await response.json();
+    const beetles = await getBeetles();
 
     renderBeetles(beetles);
   } catch (error) {
     searchMessage.textContent =
       "The catalogue could not be loaded. Please reload the page.";
+
     console.error("Could not load the beetle catalogue:", error);
   }
 }
