@@ -363,3 +363,64 @@ button {
   font-size: 14px;
   color: #526257;
 }
+
+.size-comparison {
+  max-width: 560px;
+  margin: 24px 0 0;
+}
+
+.size-comparison-stage,
+.size-comparison-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.size-comparison-stage {
+  border-bottom: 1px solid #526257;
+}
+
+.size-comparison-column {
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.size-comparison-column img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+}
+
+.size-coin {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  border: 1px solid #7b6b40;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle closest-side,
+    #d9d9d4 0 70%,
+    #c8b36d 71% 100%
+  );
+}
+
+.size-comparison figcaption {
+  font-size: 14px;
+  color: #526257;
+}
+
+.size-comparison-labels p {
+  margin: 12px 0 0;
+}
+
+.size-comparison-labels strong {
+  color: #203d2b;
+}

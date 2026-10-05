@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="400" viewBox="0 0 240 400" role="img" aria-labelledby="title desc">
+  <title id="title">Titan beetle silhouette</title>
+  <desc id="desc">Schematic dorsal silhouette. The vertical measurement represents body length; legs and antennae are drawn within that height.</desc>
+  <g fill="#203d2b">
+    <path d="M88 121 C68 170 74 324 102 388 Q110 400 120 400 Q130 400 138 388 C166 324 172 170 152 121Z"/>
+    <path d="M91 67 H149 L162 81 L151 94 L161 109 L150 126 H90 L79 109 L89 94 L78 81Z"/>
+    <ellipse cx="120" cy="43" rx="33" ry="38"/>
+    <path d="M97 24 L106 6 L116 0 L111 23Z M143 24 L134 6 L124 0 L129 23Z"/>
+  </g>
+  <g fill="none" stroke="#203d2b" stroke-linecap="round" stroke-linejoin="round">
+    <path id="legs" d="M91 90 L58 106 L47 151 L12 166 M82 161 L50 194 L36 257 L18 266 M80 237 L60 281 L53 340 L30 367" stroke-width="6"/>
+    <use href="#legs" xlink:href="#legs" transform="translate(240 0) scale(-1 1)"/>
+    <path id="antenna" d="M98 32 L80 51 L50 81 L23 135 L6 197" stroke-width="4"/>
+    <use href="#antenna" xlink:href="#antenna" transform="translate(240 0) scale(-1 1)"/>
+  </g>
+</svg>

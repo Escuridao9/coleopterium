@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="300" viewBox="0 0 280 300" role="img" aria-labelledby="title desc">
+  <title id="title">Seven-spot ladybird silhouette</title>
+  <desc id="desc">Schematic dorsal silhouette. The vertical measurement represents body length; legs and antennae are drawn within that height.</desc>
+  <g fill="#203d2b">
+    <ellipse cx="140" cy="163" rx="100" ry="137"/>
+    <ellipse cx="140" cy="60" rx="72" ry="53"/>
+    <ellipse cx="140" cy="25" rx="30" ry="25"/>
+  </g>
+  <g fill="none" stroke="#203d2b" stroke-linecap="round" stroke-linejoin="round">
+    <path id="legs" d="M79 73 L45 65 L25 87 M45 140 L18 139 L5 164 M59 227 L34 249 L28 278" stroke-width="6"/>
+    <use href="#legs" xlink:href="#legs" transform="translate(280 0) scale(-1 1)"/>
+    <path id="antenna" d="M118 18 L100 10 L86 14" stroke-width="3"/>
+    <use href="#antenna" xlink:href="#antenna" transform="translate(280 0) scale(-1 1)"/>
+  </g>
+</svg>

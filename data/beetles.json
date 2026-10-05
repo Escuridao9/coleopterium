@@ -19,6 +19,13 @@
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
       }
     },
+    "sizeComparison": {
+      "lengthMm": 75,
+      "image": "images/stag-beetle-silhouette.svg",
+      "description": "A large male, measured including its mandibles.",
+      "sourceName": "People's Trust for Endangered Species",
+      "sourceUrl": "https://ptes.org/campaigns/stag-beetles-2/stag-beetle-facts/"
+    },
     "facts": {
       "adultLength": "Males: 35–75 mm; females: 30–50 mm",
       "habitat": "Woodland edges, hedgerows, orchards, parks and gardens"
@@ -46,6 +53,13 @@
       "sourceName": "Dvořáček et al. (2020)",
       "sourceUrl": "https://doi.org/10.3390/insects11020120"
     },
+    "sizeComparison": {
+      "lengthMm": 167,
+      "image": "images/titan-beetle-silhouette.svg",
+      "description": "An example at the reported upper body length, excluding antennae.",
+      "sourceName": "Natural History Museum",
+      "sourceUrl": "https://www.nhm.ac.uk/discover/what-is-the-biggest-beetle-in-the-world.html"
+    },
     "facts": {
       "adultLength": "Body length up to 167 mm",
       "habitat": "Tropical forests in South America"
@@ -72,6 +86,13 @@
       "text": "Native to Europe and parts of Asia and Africa. Introduced populations are established in the United States.",
       "sourceName": "University of Maryland Extension",
       "sourceUrl": "https://extension.umd.edu/sites/extension.umd.edu/files/2025-10/25Oct03L.pdf#page=9"
+    },
+    "sizeComparison": {
+      "lengthMm": 8,
+      "image": "images/seven-spot-ladybird-silhouette.svg",
+      "description": "An example at the upper end of the usual adult length.",
+      "sourceName": "The Wildlife Trusts",
+      "sourceUrl": "https://www.wildlifetrusts.org/wildlife-explorer/invertebrates/beetles/7-spot-ladybird"
     },
     "facts": {
       "adultLength": "6–8 mm",

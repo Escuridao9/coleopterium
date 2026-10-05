@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="300" viewBox="0 0 220 300" role="img" aria-labelledby="title desc">
+  <title id="title">Male stag beetle silhouette</title>
+  <desc id="desc">Schematic dorsal silhouette. The vertical measurement includes the mandibles; legs and antennae are drawn within that height.</desc>
+  <g fill="#203d2b">
+    <ellipse cx="110" cy="215" rx="41" ry="85"/>
+    <path d="M78 116 Q110 105 142 116 L149 145 Q145 164 110 169 Q75 164 71 145Z"/>
+    <path d="M76 91 Q78 72 93 72 H127 Q142 72 144 91 L138 117 H82Z"/>
+    <path id="jaw" d="M85 90 C65 79 60 60 68 36 C73 22 83 10 93 0 C87 14 83 25 80 37 L94 28 L88 43 C83 50 84 58 86 63 L101 53 L95 70 Q105 82 99 91Z"/>
+    <use href="#jaw" xlink:href="#jaw" transform="translate(220 0) scale(-1 1)"/>
+  </g>
+  <g fill="none" stroke="#203d2b" stroke-linecap="round" stroke-linejoin="round">
+    <path id="legs" d="M76 135 L49 137 L29 165 L10 165 M70 173 L42 179 L22 207 L5 210 M74 217 L49 241 L44 270 L29 279" stroke-width="7"/>
+    <use href="#legs" xlink:href="#legs" transform="translate(220 0) scale(-1 1)"/>
+    <path id="antenna" d="M79 88 L58 71 L30 69 L19 57 M19 57 L12 54 M22 60 L15 57 M25 63 L18 60" stroke-width="4"/>
+    <use href="#antenna" xlink:href="#antenna" transform="translate(220 0) scale(-1 1)"/>
+  </g>
+</svg>

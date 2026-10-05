@@ -73,9 +73,33 @@ async function loadEntry() {
       document.getElementById("entry-map").hidden = false;
     }
 
+    const comparison = beetle.sizeComparison;
+    const coinDiameter = 23.25;
+    const largestLength = Math.max(comparison.lengthMm, coinDiameter);
+
+    const sizeImage = document.getElementById("size-beetle-image");
+    sizeImage.src = comparison.image;
+    sizeImage.style.height = `${(comparison.lengthMm / largestLength) * 100}%`;
+
+    const coinPercentage = `${(coinDiameter / largestLength) * 100}%`;
+    const sizeCoin = document.getElementById("size-coin");
+    sizeCoin.style.height = coinPercentage;
+    sizeCoin.style.width = coinPercentage;
+
+    document.getElementById("size-beetle-name").textContent = beetle.commonName;
+
+    document.getElementById("size-beetle-length").textContent =
+      `${comparison.lengthMm} mm`;
+
+    document.getElementById("size-description").textContent =
+      comparison.description;
+
+    const sizeSource = document.getElementById("size-source");
+    sizeSource.textContent = comparison.sourceName;
+    sizeSource.href = comparison.sourceUrl;
+
     entryContent.hidden = false;
     entryMessage.textContent = "";
-    
   } catch (error) {
     entryMessage.textContent =
       "The species information could not be loaded. Please reload the page.";
