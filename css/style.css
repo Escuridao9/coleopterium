@@ -216,3 +216,28 @@ button {
 .image-credits a {
   color: inherit;
 }
+
+.entry-page {
+  padding: 32px;
+}
+
+.entry-page h2 {
+  margin: 24px 0 8px;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #203d2b;
+}
+
+.entry-page img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.entry-page .image-credits {
+  font-size: 12px;
+  color: #526257;
+}
