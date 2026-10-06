@@ -2,16 +2,16 @@
   {
     "id": "stag-beetle-card",
     "beetleId": "stag-beetle",
-    "artwork": null
+    "artwork": "images/cards/stag-beetle-watercolor.png"
   },
   {
     "id": "titan-beetle-card",
     "beetleId": "titan-beetle",
-    "artwork": null
+    "artwork": "images/cards/titan-beetle-watercolor.png"
   },
   {
     "id": "seven-spot-ladybird-card",
     "beetleId": "seven-spot-ladybird",
-    "artwork": null
+    "artwork": "images/cards/seven-spot-ladybird-watercolor.png"
   }
 ]
