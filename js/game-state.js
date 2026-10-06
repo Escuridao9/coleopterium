@@ -1,9 +1,9 @@
+export const gameStateChangedEvent = "game-state-changed";
+
 const storageKey = "coleopterium.game";
 
 function validateState(state) {
-  const validPoints =
-    Number.isSafeInteger(state?.points) && state.points >= 0;
-
+  const validPoints = Number.isSafeInteger(state?.points) && state.points >= 0;
   const validCollection = Array.isArray(state?.collection) &&
     state.collection.every(item =>
       typeof item?.cardId === "string" && item.cardId.trim() !== "" &&
@@ -36,6 +36,7 @@ export function getGameState() {
 function saveGameState(state) {
   validateState(state);
   localStorage.setItem(storageKey, JSON.stringify(state));
+  window.dispatchEvent(new Event(gameStateChangedEvent));
 }
 
 export function addPoints(amount) {
@@ -45,16 +46,13 @@ export function addPoints(amount) {
 
   const state = getGameState();
   const updatedState = { ...state, points: state.points + amount };
-
   saveGameState(updatedState);
   return updatedState;
 }
 
 export function drawCard(cards, cost) {
   const validPool = Array.isArray(cards) && cards.length > 0 &&
-    cards.every(card =>
-      typeof card?.id === "string" && card.id.trim() !== ""
-    );
+    cards.every(card => typeof card?.id === "string" && card.id.trim() !== "");
 
   if (!validPool) {
     throw new Error("A draw needs a valid card pool.");
@@ -71,9 +69,7 @@ export function drawCard(cards, cost) {
   }
 
   const card = cards[Math.floor(Math.random() * cards.length)];
-  const alreadyOwned =
-    state.collection.some(item => item.cardId === card.id);
-
+  const alreadyOwned = state.collection.some(item => item.cardId === card.id);
   const collection = alreadyOwned
     ? state.collection.map(item => item.cardId === card.id
       ? { ...item, quantity: item.quantity + 1 }
@@ -86,8 +82,7 @@ export function drawCard(cards, cost) {
     collection
   };
 
-  // Save the points deduction and the received card together.
+  // Charge the points and record the card together before reporting success.
   saveGameState(updatedState);
-
   return { card, state: updatedState };
 }

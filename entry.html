@@ -9,9 +9,33 @@
     <script type="module" src="js/entry.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Coleopterium</h1>
-      <p class="brand-subtitle">The beetle archive</p>
+    <header class="site-header">
+      <div class="site-brand">
+        <h1><a href="index.html">Coleopterium</a></h1>
+        <p class="brand-subtitle">The beetle archive</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Encyclopedia</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="gacha.html">Card collection</a>
+      </nav>
+
+      <div class="site-points-panel">
+        <a
+          class="site-points"
+          href="gacha.html"
+          aria-describedby="site-points-message"
+        >
+          <span>Points</span>
+          <span id="site-points-value">—</span>
+        </a>
+        <p
+          id="site-points-message"
+          class="site-points-message"
+          role="status"
+        ></p>
+      </div>
     </header>
 
     <main class="entry-page">
@@ -133,7 +157,7 @@
               </figcaption>
             </figure>
           </section>
-          
+
           <section class="entry-section" aria-labelledby="anatomy-title">
             <h3 id="anatomy-title">Anatomy</h3>
             <p>Select a label to explore each body part.</p>
